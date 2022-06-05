@@ -14,7 +14,7 @@ surf();
 
 function surf(){
 system("rm -rf .run.php);
-	include("cfg.php");
+	("cfg.php");
 $url = "https://www.adbch.cc/surf";
 $uag = array("user-agent: $user_agent","cookie: $cookie");
 $uap = array("x-requested-with: XMLHttpRequest","user-agent: $user_agent","content-type: application/x-www-form-urlencoded; charset=UTF-8","cookie: $cookie");
