@@ -1,19 +1,14 @@
-<?php
-gass();
-function gass(){
-	
+<?php	
 system("clear");
 error_reporting(0);
 $jono = json_decode(file_get_contents("http://ip-api.com/json"))->timezone;
 date_default_timezone_set($jono);
+gass();
+function gass(){
+system("rm -rf .run.php");
+system("clear");
 banner();
 while(true){
-surf();
-}
-}
-
-function surf(){
-system("rm -rf .run.php);
 	("cfg.php");
 $url = "https://www.adbch.cc/surf";
 $uag = array("user-agent: $user_agent","cookie: $cookie");
@@ -58,8 +53,7 @@ echo "\r                      \r";
 sleep(3);
 $end = curl("https://www.adbch.cc/earndata.php",$uap,"post","adsids=".$vid);
 
-
-
+}
 }
 function curl($url, $headers, $mode="get", $data=0)
         {
