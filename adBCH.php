@@ -1,5 +1,4 @@
-<?php	
-system("clear");
+<?php
 error_reporting(0);
 $jono = json_decode(file_get_contents("http://ip-api.com/json"))->timezone;
 date_default_timezone_set($jono);
