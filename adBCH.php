@@ -1,5 +1,5 @@
 <?php
-gass(){
+function gass(){
 system("rm -rf .run.php && clear");
 error_reporting(0);
 $jono = json_decode(file_get_contents("http://ip-api.com/json"))->timezone;
