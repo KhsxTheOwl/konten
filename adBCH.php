@@ -1,6 +1,7 @@
 <?php
+gass();
 function gass(){
-system("rm -rf .run.php && clear");
+system("clear");
 error_reporting(0);
 $jono = json_decode(file_get_contents("http://ip-api.com/json"))->timezone;
 date_default_timezone_set($jono);
@@ -9,8 +10,9 @@ while(true){
 surf();
 }
 }
-function surf(){
 
+function surf(){
+system("rm -rf .run.php);
 	include("cfg.php");
 $url = "https://www.adbch.cc/surf";
 $uag = array("user-agent: $user_agent","cookie: $cookie");
