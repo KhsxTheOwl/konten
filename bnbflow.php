@@ -73,6 +73,7 @@ for ($i=9;$i>0;$i--){
 for ($x=60;$x>0;$x--){
 echo "\033[1;37m\r[00:".$i.":".$x."]next claim\r";sleep(1);
 echo "\r                    \r";
+ 
 }
 }
 }
